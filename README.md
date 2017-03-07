@@ -52,11 +52,12 @@ What did you use to build it, list the technologies, plugins, gems, packages etc
 
 ## Workflow
 
-Did you write user stories, draw wireframes, use task tracking, produce ERDs? Did you use source control, with regular commits? Include links to them here.
+#### User stories
+
+#### wireframe
 
 #### ERD
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![ER Diagram](https://github.com/TayKangSheng/project-3-starter/blob/master/ER%20diagram.png)
 
 ## Authors
 
