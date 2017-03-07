@@ -3,6 +3,7 @@
 Ever wanted to be a food critic? With Foodify, anyone can write, save, organise and share about their favourite restaurants in town.  
 
 <!-- This is the starter code for WDI projects. Please update this README file with information specific to your project. Replace this paragraph for instance, with a short description of your project. Then update the sections below. Refer to your project specificaion for instructions on how to submit your projects. -->
+
 ## Getting Started
 
 Provide instructions here about how to get your project running on our local machine. Do we just need to clone and open a certain file or do we need to install anything first.
@@ -52,12 +53,33 @@ What did you use to build it, list the technologies, plugins, gems, packages etc
 
 ## Workflow
 
-#### User stories
+#### User Stories
+###### User Story 1
+###### User Story 2
+###### User Story 3
 
-#### wireframe
+#### Entities
 
-#### ERD
+- __user__ ( *id*, name, email, rating, tagline )  
+- __review__ ( *id*, title, body, img_url, location, address, user_id )
+- __collection__ ( *id*, title, user_id )  
+- __collection_review__ ( *collection_id*, *review_id* )  
+- __hashtag__ ( *id*, tag )  
+- __collection_hashtag__ ( *collection_id*, *hashtag_id* )  
+- __review_hashtag__ ( *review_id*, *hashtag_id* )
+
+#### Entity Relationship Diagram
 ![ER Diagram](https://github.com/TayKangSheng/project-3-starter/blob/master/ER%20diagram.png)
+
+#### Wireframe
+Find the interactive prototype [here]()!
+
+###### Homepage
+![Hompage_img]()
+###### Login
+![Login_img]()
+###### Signup
+![Signup_img]()
 
 ## Authors
 
