@@ -1,6 +1,6 @@
 # Foodify
 
-Ever wanted to be a food critic? With Foodify, anyone can save, organise, write and share about their favourite restaurants in town.  
+Ever wanted to be a food critic? With Foodify, anyone can write, save, organise and share about their favourite restaurants in town.  
 
 <!-- This is the starter code for WDI projects. Please update this README file with information specific to your project. Replace this paragraph for instance, with a short description of your project. Then update the sections below. Refer to your project specificaion for instructions on how to submit your projects. -->
 ## Getting Started
@@ -53,6 +53,10 @@ What did you use to build it, list the technologies, plugins, gems, packages etc
 ## Workflow
 
 Did you write user stories, draw wireframes, use task tracking, produce ERDs? Did you use source control, with regular commits? Include links to them here.
+
+#### ERD
+Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 ## Authors
 
