@@ -69,13 +69,27 @@ What did you use to build it, list the technologies, plugins, gems, packages etc
 Find the interactive prototype [here]()!
 
 ##### Authentication
-Solarized dark             |  Solarized Ocean
+Login           |  Signup
 :-------------------------:|:-------------------------:
-<img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-01.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-02.png" width="250"> 
+<img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-01.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-02.png" width="250">
+
 ##### Homepage
-![Hompage_img](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-01.png)
-##### Signup
-![Signup_img]()
+<img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-01.png" width="250">
+
+##### Before Authentication
+CritiquEat           |  Collections  | Saved CritiquEat   |
+:-------------------------:|:-------------------------:|:-------------------------:|
+<img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-04.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-03.png" width="250"> | <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-02.png" width="250">
+
+##### After Authentication
+CritiquEat           |  Collections  | Saved CritiquEat   |
+:-------------------------:|:-------------------------:|:-------------------------:|
+<img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/A-Auth-03.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/A-Auth-02.png" width="250"> | <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/A-Auth-01.png" width="250">
+
+##### CritiquEat
+Before Authentication | After Authentication
+:-------------------------:|:-------------------------:
+<img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-05.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/A-Auth-04.png" width="250">
 
 ## Authors
 
