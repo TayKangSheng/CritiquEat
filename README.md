@@ -1,6 +1,7 @@
 # CritiquEat
 
-**CritiquEat** is a platform where users can write, save, collaborate and organize their favourite food places. Users can also create collections or follow Celebrity Critics to find out the good, the bad and the adventurous food places near you.
+**CritiquEat** is a platform where users can write, save, collaborate and organize their favorite food places.  
+Users can also create collections or follow Celebrity Critics to find out the good, the bad and the adventurous food places near you.
 
 ## Getting Started
 
@@ -51,20 +52,20 @@ What did you use to build it, list the technologies, plugins, gems, packages etc
 
 ## Workflow
 
-#### User Stories
-###### User Story 1
-###### User Story 2
-###### User Story 3
+### User Stories
+#### User Story 1
+#### User Story 2
+#### User Story 3
 
-#### Entities
+### Entities
 
-- __user__ ( *id*, name, email, rating, tagline )  
-- __review__ ( *id*, title, body, img_url, location, address, user_id )
-- __collection__ ( *id*, title, user_id )  
-- __collection_review__ ( *collection_id*, *review_id* )  
-- __hashtag__ ( *id*, tag )  
-- __collection_hashtag__ ( *collection_id*, *hashtag_id* )  
-- __review_hashtag__ ( *review_id*, *hashtag_id* )
+- __user__ ( email, name, bio, avatar )
+- __review__ ( title, body, image, user_id )
+- __collection__ ( title, user_id )
+- __user_save_review__ ( user_id, review_id )
+- __user_rate_review__ (review_id, user_id, rating)
+- __user_collab_collection__ ( user_id, collection_id )
+- __collection_contain_review__ ( review_id, collection_id )
 
 #### Entity Relationship Diagram
 ![ER Diagram](https://github.com/TayKangSheng/project-3-starter/blob/master/ER%20diagram.png)
