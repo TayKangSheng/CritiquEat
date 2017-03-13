@@ -1,0 +1,94 @@
+<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name) ) do |f| %>
+  <div class="row">
+    <% if flash["email"] %>
+      <% if flash["email"]["type"] %>
+        <div class="form-group col-xs-12 col-md-4 has-<%= flash["email"]["type"] %>">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true, class: "form-control" %>
+          <span class="help-block">This field <%= flash["email"]["message"] %></span>
+        </div>
+      <% else %>
+        <div class="form-group col-xs-12 col-md-4">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true, class: "form-control", value: flash["email"]["value"] %>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="form-group col-xs-12 col-md-4">
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% if flash["name"] %>
+      <% if flash["name"]["type"] %>
+        <div class="form-group col-xs-12 col-md-4 has-<%= flash["name"]["type"] %>">
+          <%= f.label :name %>
+          <%= f.text_field :name, autofocus: true, class: "form-control" %>
+          <span class="help-block">This field <%= flash["name"]["message"][0] %></span>
+        </div>
+      <% else %>
+        <div class="form-group col-xs-12 col-md-4">
+          <%= f.label :name %>
+          <%= f.text_field :name, autofocus: true, class: "form-control", value: flash["name"]["value"] %>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="form-group col-xs-12 col-md-4">
+        <%= f.label :name %>
+        <%= f.text_field :name, autofocus: true, class: "form-control" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% if flash["password"] %>
+      <div class="form-group col-xs-12 col-md-4 has-<%= flash["password"]["type"] %>">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+        <span class="help-block">This field <%= flash[:password]["message"][0] %></span>
+      </div>
+    <% else %>
+      <div class="form-group col-xs-12 col-md-4">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br/>
+        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% if flash['password_confirmation'] %>
+      <div class="form-group col-xs-12 col-md-4 has-<%= flash["password_confirmation"]["type"] %>">
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+        <span class="help-block">This field <%= flash["password_confirmation"]["message"][0] %></span>
+      </div>
+    <% else %>
+      <div class="form-group col-xs-12 col-md-4">
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <div class="actions form-group col-xs-12 col-md-4">
+      <%= f.submit "Sign up", class: "btn btn-default" %>
+      <%#= render "devise/shared/links" %>
+    </div>
+  </div>
+
+  <div class="row form-group col-xs-12 col-md-4">
+    Have an account? Sign in <%= link_to "here!", new_session_path(resource_name) %>
+  </div>
+<% end %>
