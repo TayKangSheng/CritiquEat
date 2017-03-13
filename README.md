@@ -64,31 +64,31 @@ Where is this deployed online (github pages, heroku etc), give us the link and a
 | __user_collab_collection__    | ( user_id, collection_id )      |
 | __collection_contain_review__ | ( review_id, collection_id )    |
 
-#### Entity Relationship Diagram
+### Entity Relationship Diagram
 ![ER Diagram](https://github.com/TayKangSheng/project-3-starter/blob/master/ER%20diagram.png)
 
-#### Wireframe
+### Wireframe
 Find the interactive prototype [here]()!
 
-##### Authentication
+#### Authentication
 Login           |  Signup
 :-------------------------:|:-------------------------:
 <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-01.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-02.png" width="250">
 
-##### Homepage
+#### Homepage
 <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-01.png" width="250">
 
-##### Before Authentication
+#### Before Authentication
 CritiquEat           |  Collections  | Saved CritiquEat   |
 :-------------------------:|:-------------------------:|:-------------------------:|
 <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-04.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-03.png" width="250"> | <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-02.png" width="250">
 
-##### After Authentication
+#### After Authentication
 CritiquEat           |  Collections  | Saved CritiquEat   |
 :-------------------------:|:-------------------------:|:-------------------------:|
 <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/A-Auth-03.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/A-Auth-02.png" width="250"> | <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/A-Auth-01.png" width="250">
 
-##### CritiquEat
+#### CritiquEat
 Before Authentication | After Authentication
 :-------------------------:|:-------------------------:
 <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-05.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/A-Auth-04.png" width="250">
