@@ -69,8 +69,9 @@ What did you use to build it, list the technologies, plugins, gems, packages etc
 Find the interactive prototype [here]()!
 
 ##### Authentication
-![Login_img](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-01.png)
-![Signup_img](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-02.png)
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-01.png =250x)  |  ![](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-02.png =250x)
 ##### Homepage
 ![Hompage_img](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-01.png)
 ##### Signup
