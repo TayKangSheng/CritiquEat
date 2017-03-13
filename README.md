@@ -52,11 +52,6 @@ What did you use to build it, list the technologies, plugins, gems, packages etc
 
 ## Workflow
 
-### User Stories
-#### User Story 1
-#### User Story 2
-#### User Story 3
-
 ### Entities
 
 - __user__ ( email, name, bio, avatar )
@@ -73,11 +68,12 @@ What did you use to build it, list the technologies, plugins, gems, packages etc
 #### Wireframe
 Find the interactive prototype [here]()!
 
-###### Homepage
-![Hompage_img]()
-###### Login
-![Login_img]()
-###### Signup
+##### Authentication
+![Login_img](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-01.png)
+![Signup_img](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/Auth-02.png)
+##### Homepage
+![Hompage_img](https://github.com/TayKangSheng/project-3-starter/blob/master/Wireframe/B-Auth-01.png)
+##### Signup
 ![Signup_img]()
 
 ## Authors
