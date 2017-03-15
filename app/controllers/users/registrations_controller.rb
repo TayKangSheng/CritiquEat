@@ -50,7 +50,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       if resource.errors["password_confirmation"]
         flash['password_confirmation'] = { "type"=>"error", "message"=>resource.errors['password_confirmation']}
       end
-      
+
       redirect_to new_user_registration_path
     end
   end
@@ -96,6 +96,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super(resource)
   # end
 
+  def after_update_path_for(resource)
+    user_path(resource)
+  end
+
   # The path used after sign up for inactive accounts.
   def after_inactive_sign_up_path_for(resource)
     # super(resource)
@@ -105,10 +109,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
 
   def sign_up_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :bio)
   end
 
   def account_update_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation, :current_password)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :current_password, :bio)
   end
 end
