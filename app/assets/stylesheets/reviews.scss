@@ -1,0 +1,48 @@
+// Place all the styles related to the Reviews controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// See this link for reference
+// http://jsfiddle.net/La8wQ/2268/
+
+.waterfall-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.taste{background-image:url('/images/smile.png');}
+.price{background-image:url('/images/money.png');}
+.location{background-image:url('/images/location.png');}
+
+.waterfall-selector label.selected.selected-waterfall{opacity: .9;}
+.waterfall-selector label.selected.selected-waterfall{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+
+.selected-waterfall{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:50px;height:35px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.2);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.2);
+            filter: brightness(1.8) grayscale(1) opacity(.2);
+}
+.selected-waterfall:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+//
+// /* Extras */
+// a:visited{color:#888}
+// a{color:#444;text-decoration:none;}
+// p{margin-bottom:.3em;}

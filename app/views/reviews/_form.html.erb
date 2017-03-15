@@ -1,0 +1,90 @@
+<%= form_for(@review) do |f| %>
+  <% if @review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% @review.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="form-group col-xs-12 col-md-10">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-xs-12 col-md-10">
+      <%= f.label :body %>
+      <%= f.text_area :body, class: "form-control", rows:"20" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-xs-12 col-md-10 waterfall-selector">
+      <%= f.label :taste %>
+      <div class="radio">
+        <%= f.radio_button :taste, 1, id:"taste1", class:"taste-radio", checked:"checked" %>
+        <label class="selected-waterfall taste selected" id="taste1-label" for="taste1"></label>
+        <%= f.radio_button :taste, 2, id:"taste2", class:"taste-radio" %>
+        <label class="selected-waterfall taste" id="taste2-label" for="taste2"></label>
+        <%= f.radio_button :taste, 3, id:"taste3", class:"taste-radio" %>
+        <label class="selected-waterfall taste" id="taste3-label" for="taste3"></label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-xs-12 col-md-10 waterfall-selector">
+      <%= f.label :price %>
+      <div class="radio">
+        <%= f.radio_button :price, 1, id:"price1", class:"price-radio", checked:"checked" %>
+        <label class="selected-waterfall price selected" id="price1-label" for="price1"></label>
+        <%= f.radio_button :price, 2, id:"price2", class:"price-radio" %>
+        <label class="selected-waterfall price" id="price2-label" for="price2"></label>
+        <%= f.radio_button :price, 3, id:"price3", class:"price-radio" %>
+        <label class="selected-waterfall price" id="price3-label" for="price3"></label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-xs-12 col-md-10 waterfall-selector">
+      <%= f.label :location %>
+      <div class="radio">
+        <%= f.radio_button :location, 1, id:"location1", class:"location-radio" %>
+        <label class="selected-waterfall location selected" id="location1-label" for="location1"></label>
+        <%= f.radio_button :location, 2, id:"location2", class:"location-radio" %>
+        <label class="selected-waterfall location" id="location2-label" for="location2"></label>
+        <%= f.radio_button :location, 3, id:"location3", class:"location-radio" %>
+        <label class="selected-waterfall location" id="location3-label" for="location3"></label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-xs-12 col-md-10">
+      <%= f.label :image, style:"display:block;" %>
+      <label class="btn btn-default btn-file">
+        Browse
+        <%= f.file_field :image, id:"review[image]",
+              style:"display:none;",
+              onchange:"$('#upload-file-info').html( $(this).val().replace('C:\\\\fakepath\\\\', '') );" %>
+      </label>
+      <span class='label label-info' id="upload-file-info">No file uploaded.</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="actions form-group col-xs-12 col-md-4">
+      <%= f.submit "Save CritiquEat", class: "btn btn-primary" %>
+      <%= link_to 'Back', @review, class: "btn btn-primary"%>
+    </div>
+  </div>
+
+<% end %>

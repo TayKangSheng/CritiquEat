@@ -1,0 +1,11 @@
+
+<pre><%= @review.inspect %></pre>
+<pre><%= @review.image %></pre>
+<%= image_tag @review.image %>
+
+<div class="row">
+  <% if current_user.id == @review.user_id %>
+    <%= link_to "Edit", edit_review_path(@review), method: :get ,class: "btn btn-primary" %>
+    <%= link_to 'Destroy', @review, method: :delete, class: "btn btn-danger", data: { confirm: 'Are you sure?' } %>
+  <% end %>
+</div>
