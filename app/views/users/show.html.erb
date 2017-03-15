@@ -37,12 +37,11 @@
       </a>
     </div>
     <% end %>
-  <% elsif current_user && false %>
+  <% elsif current_user %>
+    <% if @user.id != current_user.id %>
+      <p>CritiquEating in progress..</p>
+    <% end %>
+  <% else %>
     <p>CritiquEating in progress..</p>
   <% end %>
 </div>
-
-<!-- <div class="row col-xs-12 col-md-12">
-  <pre><%= @user.inspect %></pre>
-  <pre><%= @user.reviews.inspect %></pre>
-</div> -->
