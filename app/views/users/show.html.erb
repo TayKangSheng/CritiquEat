@@ -24,21 +24,21 @@
   <% end %>
 
   <% if @user.reviews.length > 0 %>
-  <% @user.reviews.each do |review| %>
-  <div class="col-xs-4 col-md-4">
-    <a href="/reviews/<%= review.id %>">
-      <div class="card">
-        <%= image_tag review.image, class:"img-responsive center-block" %>
-        <div class="content">
-          <h4><b><%=review.title%></b></h4>
-          <p><%= review.body %></p>
+    <% @user.reviews.each do |review| %>
+    <div class="col-xs-4 col-md-4">
+      <a href="/reviews/<%= review.id %>">
+        <div class="card">
+          <%= image_tag review.image, class:"img-responsive center-block" %>
+          <div class="content">
+            <h4><b><%=review.title%></b></h4>
+            <p><%= review.body %></p>
+          </div>
         </div>
-      </div>
-    </a>
-  </div>
-  <% end %>
-  <% else %>
-  <p>CritiquEating in progress..</p>
+      </a>
+    </div>
+    <% end %>
+  <% elsif current_user && false %>
+    <p>CritiquEating in progress..</p>
   <% end %>
 </div>
 
