@@ -1,3 +1,5 @@
+<pre><%= current_user.inspect %></pre>
+
 <%= form_for(@review) do |f| %>
   <% if @review.errors.any? %>
     <div id="error_explanation">

@@ -1,7 +1,7 @@
 
 <!-- <pre><#%= @review.inspect %></pre>
 <pre><#%= @review.user.inspect %></pre> -->
-
+<%= @review.user.inspect %>
 <div id="admin-panel">
   <%= render 'adminPanel' %>
 </div>
@@ -72,7 +72,7 @@
     <div class="col-xs-8 col-md-8">
       <h4><%= @review.user.name.capitalize %></h4>
       <p>
-        <% if @review.user.bio.empty? %>
+        <% if !@review.user.bio %>
           <%= @review.user.name.capitalize %> has been part of CritiquEat since <%= @review.user.created_at.strftime("%B %d, %Y") %>.
         <% else %>
           <%= @review.user.bio %>
