@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
 
   # new_reviews GET    /reviews/new(.:format)           reviews#new
   def new
-    @review = Review.new
+    @review = User.find(current_user.id).reviews.build
   end
 
   # edit_reviews GET    /reviews/edit(.:format)          reviews#edit
