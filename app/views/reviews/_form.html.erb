@@ -58,7 +58,7 @@
     <div class="form-group col-xs-12 col-md-10 waterfall-selector">
       <%= f.label :location %>
       <div class="radio">
-        <%= f.radio_button :location, 1, id:"location1", class:"location-radio" %>
+        <%= f.radio_button :location, 1, id:"location1", class:"location-radio", checked: "checked" %>
         <label class="selected-waterfall location selected" id="location1-label" for="location1"></label>
         <%= f.radio_button :location, 2, id:"location2", class:"location-radio" %>
         <label class="selected-waterfall location" id="location2-label" for="location2"></label>
