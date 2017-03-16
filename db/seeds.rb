@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(email:"kangsheng@gmail.com", name:"kangsheng", password: "kang", password_confirmation: "kang")
+User.create(email:"woop@gmail.com", name:"Woopa", password: "kang", password_confirmation: "kang")
+User.create(email:"awesome@gmail.com", name:"mr. awesome", password: "kang", password_confirmation: "kang")
 
 # Review.create(
 #   title:"Char Kway Teow",
