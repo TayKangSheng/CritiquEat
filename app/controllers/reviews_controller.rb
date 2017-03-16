@@ -6,6 +6,7 @@ class ReviewsController < ApplicationController
     # respond_to do |format|
     #   format.html { redirect_to root_path }
     # end
+    @reviews = Review.all
   end
 
   # new_reviews GET    /reviews/new(.:format)           reviews#new
