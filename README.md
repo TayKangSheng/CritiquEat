@@ -10,37 +10,30 @@ Provide instructions here about how to get your project running on our local mac
 -->
 
 ### Prerequisites
-<!--
-What is needed to install and run the project, how do we install them
 
+If you don't have ruby installed, follow this [link](http://railsapps.github.io/installrubyonrails-mac.html) to get started with Ruby On Rails.  
+
+### How to Deploy
+
+Install relevant ruby gems
 ```
-Code example
-``` -->
-
-### How to Use
-<!--
-A step by step guide on how to install and use the project, for example if this is a game, how do we play it.
-
-
-```
-Code example
+bundle install
 ```
 
-More steps...
-
+Create database  
 ```
-until finished
-``` -->
-
-
-## Tests
-<!--
-Did you write automated tests? If so, how do we run them.
-
-
+rails db:create
 ```
-Code example
-``` -->
+
+Create tables
+```
+rails db:migrate
+```
+
+Seed default database database data
+```
+rails db:seed
+```
 
 ## Live Version
 
@@ -49,6 +42,8 @@ Visit CritiquEat [here](http://critiqueat.herokuapp.com/)!
 ## Built With
 
 * [Ruby on Rails](https://rubyonrails.org)
+* [Devise](https://github.com/plataformatec/devise)
+* [Cloudinary](http://cloudinary.com)
 * [jQuery](http://jquery.com/)
 
 ## Workflow
@@ -93,12 +88,6 @@ Before Authentication | After Authentication
 :-------------------------:|:-------------------------:
 <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/README-assets/Wireframe/B-Auth-05.png" width="250"> |  <img src="https://github.com/TayKangSheng/project-3-starter/blob/master/README-assets/Wireframe/A-Auth-04.png" width="250">
 
-## Authors
-
-Did you collaborate with others on this project, list them here
-
-* **John McClain** - *Responsible for keeping vests white* - [GithubUserName](https://github.com/GithubUserName)
-
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used, for example [this was a useful starting point for creating this template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
+* Hat tip to [General Assembly WDI-SG](https://github.com/wdi-sg) for all the Ruby on Rails lessons.
