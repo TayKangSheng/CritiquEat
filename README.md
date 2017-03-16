@@ -44,7 +44,7 @@ Code example
 
 ## Live Version
 
-Where is this deployed online (github pages, heroku etc), give us the link and any access details we need.
+Visit CritiquEat [here](http://critiqueat.herokuapp.com/)!
 
 ## Built With
 
