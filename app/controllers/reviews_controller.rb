@@ -26,6 +26,13 @@ class ReviewsController < ApplicationController
 
   # reviews GET    /reviews(.:format)               reviews#show
   def show
+    if current_user
+      if UserSaveReview.where(user_id: current_user.id, review_id: @review.id ).exists?
+        @user_save_review = UserSaveReview.find_by(user_id: current_user.id, review_id: @review.id)
+      else
+        @user_save_review = UserSaveReview.new
+      end
+    end
     respond_to do |format|
       format.html
       format.json { render json: @review }

@@ -1,0 +1,28 @@
+<% if current_user %>
+  <div class="row">
+    <div style="float: right;">
+      <% if current_user.id == @review.user_id %>
+      <%= link_to "Edit", edit_review_path(@review), method: :get ,class: "btn btn-primary" %>
+      <%= link_to 'Destroy', @review, method: :delete, class: "btn btn-danger", data: { confirm: 'Are you sure?' } %>
+      <% else %>
+        <% if !@user_save_review.review_id %>
+          <%= form_for @user_save_review, remote: true, :method => :post do |f| %>
+            <%= f.hidden_field :user_id, value: current_user.id %>
+            <%= f.hidden_field :review_id, value: @review.id %>
+            <div class="actions">
+              <%= f.submit "Bookmark CritiquEat", class: "btn btn-primary", id:"bookmark-button" %>
+            </div>
+          <% end %>
+        <% else %>
+          <%= form_for @user_save_review, remote: true, :method => :delete do |f| %>
+            <%= f.hidden_field :user_id, value: current_user.id %>
+            <%= f.hidden_field :review_id, value: @review.id %>
+            <div class="actions">
+              <%= f.submit "Bookmarked", class: "btn btn-primary", id:"bookmark-button" %>
+            </div>
+          <% end %>
+        <% end %>
+        <% end %>
+    </div>
+  </div>
+<% end %>

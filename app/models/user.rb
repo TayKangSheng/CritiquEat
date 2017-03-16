@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :reviews, dependent: :destroy
+  has_many :user_save_reviews, dependent: :destroy
 
   validates_presence_of :name
 end
