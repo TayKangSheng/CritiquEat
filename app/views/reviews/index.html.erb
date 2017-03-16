@@ -1,4 +1,5 @@
 
+<% if !current_user %>
 <section class="jumbotron hero">
   <%= image_tag '/images/jumbotron.jpg' %>
   <div class="container">
@@ -14,6 +15,7 @@ Users can also create collections or follow Celebrity Critics to find out the go
     </div>
   </div>
 </section>
+<% end %>
 
 <h1>Recent reviews</h1>
 
