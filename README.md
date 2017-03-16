@@ -35,6 +35,11 @@ Seed default database database data
 rails db:seed
 ```
 
+Last but not least, deploy the server  
+```
+rails s
+```
+
 ## Live Version
 
 Visit CritiquEat [here](http://critiqueat.herokuapp.com/)!
