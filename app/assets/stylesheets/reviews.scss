@@ -41,8 +41,39 @@
        -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
             filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
-//
-// /* Extras */
-// a:visited{color:#888}
-// a{color:#444;text-decoration:none;}
-// p{margin-bottom:.3em;}
+
+.attributes-panel {
+  display: flex;
+  flex-direction: row;
+  background-color: lightyellow;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  // height: 150px;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+
+.attributes-panel img.active {
+  -webkit-filter: none;
+     -moz-filter: none;
+          filter: none;
+}
+
+.attributes-panel img {
+  width: 20%;
+  -webkit-transition: all 100ms ease-in;
+     -moz-transition: all 100ms ease-in;
+          transition: all 100ms ease-in;
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(.2);
+     -moz-filter: brightness(1.8) grayscale(1) opacity(.2);
+          filter: brightness(1.8) grayscale(1) opacity(.2);
+}
+
+.review-body {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
