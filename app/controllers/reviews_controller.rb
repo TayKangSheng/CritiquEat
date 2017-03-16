@@ -58,7 +58,7 @@ class ReviewsController < ApplicationController
     @review.destroy
     respond_to do |format|
       if @review.user_id == current_user.id
-        format.html { redirect_to user_url, notice: 'Review was successfully destroyed.' }
+        format.html { redirect_to user_url(current_user.id), notice: 'Review was successfully destroyed.' }
         format.json { head :no_content }
       else
         format.html { redirect_to @review, alert: 'You can\'t destroy someone else\'s reviews!' }
