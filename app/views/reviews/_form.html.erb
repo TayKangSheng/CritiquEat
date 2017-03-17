@@ -91,7 +91,7 @@
   <div class="row">
     <div class="actions form-group col-xs-12 col-md-4">
       <%= f.submit "Save CritiquEat", class: "btn btn-primary" %>
-      <%= link_to 'Back', @review, class: "btn btn-primary"%>
+      <%= link_to 'Back', "/profile/#{current_user.id}", class: "btn btn-primary"%>
     </div>
   </div>
 
