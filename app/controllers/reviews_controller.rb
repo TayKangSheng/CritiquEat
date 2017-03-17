@@ -4,6 +4,8 @@ class ReviewsController < ApplicationController
 
   def index
     @reviews = Review.all
+    @topbookmarkedcritiqueater = UserSaveReview.topbookmarkedcritiqueater
+    @topbookmarkedcritiqueat = UserSaveReview.topbookmarkedcritiqueat
   end
 
   # new_reviews GET    /reviews/new(.:format)           reviews#new
