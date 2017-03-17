@@ -3,7 +3,7 @@ class ReviewsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy]
 
   def index
-    @reviews = Review.all
+    @reviews = Review.all.order("created_at DESC").limit(6)
     @topbookmarkedcritiqueater = UserSaveReview.topbookmarkedcritiqueater
     @topbookmarkedcritiqueat = UserSaveReview.topbookmarkedcritiqueat
   end
